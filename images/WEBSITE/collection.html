@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Collection | VISION X</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                👓 <span>VISION X</span>
+            </a>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+
+                <li>
+                    <a href="collection.html" class="active">COLLECTION</a>
+                </li>
+
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+
+            <div class="nav-icons">
+
+                <a href="collection.html" title="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+
+                <a href="cart.html" title="Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cartCount">0</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= COLLECTION HERO ================= -->
+
+    <section class="collection-hero">
+
+        <div class="collection-hero-content">
+
+            <p class="collection-small">
+                VISION X COLLECTION
+            </p>
+
+            <h1>
+                FIND YOUR<br>
+                PERFECT STYLE.
+            </h1>
+
+            <p>
+                Explore our premium collection of eyewear,<br>
+                designed to make every look unforgettable.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- ================= COLLECTION SECTION ================= -->
+
+    <section class="collection-section">
+
+        <div class="collection-heading">
+
+            <span>EXPLORE OUR COLLECTION</span>
+
+            <h2>Premium Eyewear</h2>
+
+            <p>
+                Discover luxury eyewear from selected premium brands.
+            </p>
+
+        </div>
+        </section>
+
+
+        <!-- ================= SEARCH + FILTER ================= -->
+
+        <div class="collection-tools">
+
+            <div class="collection-search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search eyewear..."
+                >
+
+            </div>
+
+
+            <select id="brandFilter">
+
+                <option value="all">All Brands</option>
+
+                <option value="lm">LM</option>
+
+                <option value="GUCCI">GUCCI</option>
+
+                <option value="ZARDAN">ZARDAN</option>
+
+                <option value="oakley">OAKLEY</option>
+
+                <option value="perkey">PERKEY</option>
+
+                <option value="sports">SPORTS</option>
+
+                <option value="okno">okno</option>
+
+                <option value="classic">classic</option>
+
+                <option value="axn">axn</option>
+
+                <option value="DERVIN">DERVIN</option>
+
+                <option value="GOLDEN">GOLDEN</option>
+
+                <option value="BLACK">BLACK</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <!-- PRODUCTS -->
+
+<section class="collection-grid" id="productGrid">
+
+    <!-- PRODUCT 1 -->
+    <div class="collection-card" data-brand="lm" data-name="LM">
+
+        <div class="collection-image">
+            <span class="product-badge">PREMIUM</span>
+
+            <img src="images/LM.JPG.jpeg" alt="LM Eyewear">
+        </div>
+
+        <div class="collection-info">
+            <h3>LM</h3>
+
+            <p class="collection-price">₹40,000</p>
+
+          <button class="collection-btn"
+            onclick="showDetails('LM', '₹40,000', 'images/LM.JPG.jpeg')">
+             VIEW DETAILS
+        </button>
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 2 -->
+    <div class="collection-card" data-brand="gucci" data-name="GUCCI">
+
+        <div class="collection-image">
+            <span class="product-badge">PREMIUM</span>
+
+            <img src="images/gucci cllectoin.jpg.jpeg" alt="GUCCI Eyewear">
+        </div>
+
+        <div class="collection-info">
+            <h3>GUCCI</h3>
+
+            <p class="collection-price">₹35,000</p>
+
+            <button class="collection-btn"
+                onclick="showDetails('GUCCI', '₹35,000', 'images/gucci cllectoin.jpg.jpeg')">
+                VIEW DETAILS
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 3 -->
+    <div class="collection-card" data-brand="sports" data-name="SPORTS">
+
+        <div class="collection-image">
+            <span class="product-badge">PREMIUM</span>
+
+            <img src="images/sports collection.jpg.jpeg" alt="Sports Sunglasses">
+        </div>
+
+        <div class="collection-info">
+            <h3>SPORTS</h3>
+
+            <p class="collection-price">₹30,000</p>
+
+            <button class="collection-btn"
+                onclick="showDetails('SPORTS', '₹30,000', 'images/sports collection.jpg.jpeg')">
+                VIEW DETAILS
+            </button>
+        </div>
+
+    </div>
+    <!-- PRODUCT 4 - PERKEY -->
+
+<!-- PRODUCT 4 - PERKEY -->
+
+<div class="collection-card"
+     data-brand="perkey"
+     data-name="PERKEY">
+
+    <div class="collection-image">
+
+        <span class="product-badge">PREMIUM</span>
+
+        <img src="images/perkey collection.jpg.jpeg"
+             alt="Perkey Eyewear">
+
+    </div>
+
+    <div class="collection-info">
+
+        <h3>PERKEY</h3>
+
+        <p class="collection-price">₹25,000</p>
+
+        <button class="collection-btn"
+            onclick="showDetails('PERKEY', '₹25,000', 'images/perkey collection.jpg.jpeg')">
+            VIEW DETAILS
+        </button>
+
+    </div>
+
+</div>
+
+<!-- PRODUCT 5 - RAY-BAN -->
+
+<div class="collection-card" data-brand="rayban" data-name="RAY-BAN">
+
+    <div class="collection-image">
+
+        <span class="product-badge">PREMIUM</span>
+
+        <img
+            src="images/ray-ban collection.jpg.jpeg"
+            alt="Ray-Ban Sunglasses">
+
+    </div>
+
+    <div class="collection-info">
+
+        <h3>RAY-BAN</h3>
+
+        <p class="collection-price">₹20,000</p>
+
+        <button class="collection-btn"
+            onclick="showDetails('RAY-BAN', '₹20,000', 'images/ray-ban collection.jpg.jpeg')">  
+            VIEW DETAILS
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- PRODUCT 6 - ZARDAN -->
+
+<div class="collection-card" data-brand="zardan" data-name="ZARDAN">
+
+    <div class="collection-image">
+
+        <span class="product-badge">PREMIUM</span>
+
+        <img
+            src="images/zardan collection.jpg.jpeg"
+            alt="Zardan Sunglasses">
+
+    </div>
+
+    <div class="collection-info">
+
+        <h3>ZARDAN</h3>
+
+        <p class="collection-price">₹15,000</p>
+
+        <button class="collection-btn"
+            onclick="showDetails('ZARDAN', '₹15,000', 'images/zardan collection.jpg.jpeg')">
+            VIEW DETAILS
+        </button>
+
+    </div>
+
+</div>
+</section>
+
+<!-- ================= NORMAL COLLECTION ================= -->
+<section class="normal-collection">
+
+    <div class="normal-heading">
+        <p>EXPLORE MORE</p>
+        <h2>Normal Collection</h2>
+        <span>Stylish eyewear for your everyday look.</span>
+    </div>
+
+    <div class="normal-grid">
+
+        <!-- Product 1 -->
+        <div class="normal-card">
+            <div class="normal-image">
+                <span class="normal-badge">CLASSIC</span>
+                <img src="images/okno collection.jpg.jpeg" alt="Okno Sunglasses">
+            </div>
+
+            <div class="normal-info">
+                <h3>Okno</h3>
+                <p>₹2,300</p>
+                <button onclick="showDetails('Okno',2300,'images/okno collection.jpg.jpeg')">
+    VIEW DETAILS
+</button>
+            </div>
+        </div>
+
+
+        <!-- Product 2 -->
+        <div class="normal-card">
+            <div class="normal-image">
+                <span class="normal-badge">CLASSIC</span>
+                <img src="images/CLASSIC .JPG.jpeg" alt="Classic Sunglasses">
+            </div>
+
+            <div class="normal-info">
+                <h3>Classic</h3>
+                <p>₹2,500</p>
+                <button onclick="showDetails('classic',2300,'images/CLASSIC .JPG.jpeg')">
+    VIEW DETAILS
+</button>
+            </div>
+        </div>
+
+
+        <!-- Product 3 -->
+        <div class="normal-card">
+            <div class="normal-image">
+                <span class="normal-badge">CLASSIC</span>
+                <img src="images/AXN.jpg.jpeg" alt="AXN Sunglasses">
+            </div>
+
+            <div class="normal-info">
+                <h3>AXN</h3>
+                <p>₹2,300</p>
+                <button onclick="showDetails('AXN',2300,'images/AXN.JPG.jpeg')">
+                    VIEW DETAILS
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Product 4 -->
+        <div class="normal-card">
+            <div class="normal-image">
+                <span class="normal-badge">CLASSIC</span>
+                <img src="images/GOLDEN.JPG.jpeg" alt="GOLDEN Sunglasses">
+            </div>
+
+            <div class="normal-info">
+                <h3>GOLDEN</h3>
+                <p>₹3,000</p>
+                <button onclick="showDetails('GOLDEN',3000,'images/GOLDEN.JPG.jpeg')">
+                    VIEW DETAILS
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Product 5 -->
+        <div class="normal-card">
+            <div class="normal-image">
+                <span class="normal-badge">CLASSIC</span>
+                <img src="images/DERVIN.JPG.jpeg" alt="DERVIN Sunglasses">
+            </div>
+
+            <div class="normal-info">
+                <h3>DERVIN</h3>
+                <p>₹1,000</p>
+                <button onclick="showDetails('DERVIN',1000,'images/DERVIN.JPG.jpeg')">
+                    VIEW DETAILS
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Product 6 -->
+        <div class="normal-card">
+            <div class="normal-image">
+                <span class="normal-badge">CLASSIC</span>
+                <img src="images/GOLD.JPG.jpeg" alt=" Gold Sunglasses">
+            </div>
+
+            <div class="normal-info">
+                <h3> Gold</h3>
+                <p>₹1,500</p>
+                <button onclick="showDetails('Gold',1500,'images/GOLD.JPG.jpeg')">
+                    VIEW DETAILS
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- PRODUCT DETAILS POPUP -->
+
+<div class="details-modal" id="detailsModal">
+
+    <div class="details-box">
+
+        <button class="close-details" onclick="closeDetails()">
+            &times;
+        </button>
+
+        <img id="detailsImage" src="" alt="Product">
+
+        <div class="details-content">
+
+            <span>VISION X PREMIUM</span>
+
+            <h2 id="detailsName">Product</h2>
+
+            <h3 id="detailsPrice">₹0</h3>
+
+            <p>
+                Premium eyewear designed for style,
+                comfort and everyday luxury.
+            </p>
+
+           <button class="modal-cart" onclick="addCurrentProductToCart()">
+    ADD TO CART
+</button>
+
+<button class="modal-buy">
+    BUY NOW
+</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+        <a href="#" class="back-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!--script-->
+<script>
+const searchInput = document.getElementById("searchInput");
+const brandFilter = document.getElementById("brandFilter");
+const products = document.querySelectorAll(".collection-card");
+
+function filterProducts() {
+
+    const search = searchInput.value.toLowerCase().trim();
+    const brand = brandFilter.value.toLowerCase();
+
+    products.forEach(product => {
+
+        const name = product.dataset.name.toLowerCase();
+        const productBrand = product.dataset.brand.toLowerCase();
+
+        const searchMatch = name.includes(search);
+        const brandMatch =
+            brand === "all" || productBrand === brand;
+
+        if (searchMatch && brandMatch) {
+            product.style.display = "";
+        } else {
+            product.style.display = "none";
+        }
+
+    });
+}
+    document.getElementById("searchInput").addEventListener("input", filterProducts);
+    document.getElementById("brandFilter").addEventListener("change", filterProducts);
+
+searchInput.addEventListener("input", filterProducts);
+brandFilter.addEventListener("change", filterProducts);
+
+
+/* ================= PRODUCT DETAILS POPUP ================= */
+
+function showDetails(name, price, image) {
+
+    currentProduct.name = name;
+    currentProduct.price = price;
+    currentProduct.image = image;
+
+    document.getElementById("detailsName").textContent = name;
+
+    document.getElementById("detailsPrice").textContent = price;
+
+    document.getElementById("detailsImage").src = image;
+
+    document.getElementById("detailsModal").style.display = "flex";
+}
+
+
+function closeDetails() {
+
+    document.getElementById("detailsModal").style.display = "none";
+
+}
+
+
+/* CLOSE POPUP BY CLICKING OUTSIDE */
+
+const detailsModal = document.getElementById("detailsModal");
+
+if (detailsModal) {
+
+    detailsModal.addEventListener("click", function(event) {
+
+        if (event.target === this) {
+            closeDetails();
+        }
+
+    });
+
+}
+let currentProduct = {
+    name: "",
+    price: "",
+    image: ""
+};
+function addToCart(name, price, image) {
+
+    let cart = JSON.parse(localStorage.getItem("visionXCart")) || [];
+
+    price = Number(String(price).replace(/[₹,]/g, ""));
+
+    let existingProduct = cart.find(
+        product => product.name === name
+    );
+
+    if (existingProduct) {
+
+        existingProduct.quantity =
+            (Number(existingProduct.quantity) || 1) + 1;
+
+    } else {
+
+        cart.push({
+            name: name,
+            price: price,
+            image: image,
+            quantity: 1
+        });
+    }
+
+    localStorage.setItem(
+        "visionXCart",
+        JSON.stringify(cart)
+    );
+
+    updateCartCount();
+
+    alert(name + " added to cart!");
+}
+   
+
+function updateCartCount() {
+
+    const cart = JSON.parse(localStorage.getItem("visionXCart")) || [];
+
+    const totalQuantity = cart.reduce(
+        (total, product) => total + product.quantity,
+        0
+    );
+
+    const cartCount = document.getElementById("cartCount");
+
+    if (cartCount) {
+        cartCount.textContent = totalQuantity;
+    }
+}
+function addCurrentProductToCart() {
+
+    if (!currentProduct.name) {
+        alert("Product not selected!");
+        return;
+    }
+
+    addToCart(
+        currentProduct.name,
+        currentProduct.price,
+        currentProduct.image
+    );
+
+}
+updateCartCount();
+
+</script>
+
+
+   <!-- ================= NEWSLETTER ================= -->
+<section class="newsletter">
+    <h2>Subscribe To Our newsletter</h2>
+    <P>Get updates on the latest sunglass collection and exclusive offers.</P>
+    <form id="newsletterForm">
+        <input
+        type="email"
+        id="newsletterEmail"
+        placeholder="Enter your Email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</section>
+<!-- ================= FOOTER ================= -->
+ <footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-box">
+            <h3>VISION-X</h3>
+            <p>LUXURY SUNGLASS STORE</p>
+            <p>Premium sunglasses from the world's most trusted brands.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p><i class="fa-solid fa-phone"></i> +91 9313361700</p>
+            <p><i class="fa-solid fa-envelope"></i> info@visionx.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> Ahmedabad, Gujarat</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/x__mr__sahan__x?stkn=Njk5eW9rYjBpM20=" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                 
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 VISION-X. All Rights Reserved.
+    </p>
+
+</footer>
+</body>
+</html>
